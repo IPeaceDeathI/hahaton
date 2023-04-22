@@ -5,7 +5,7 @@ let state = {}
 
 function startGame() {
     state = {}
-    showTextNode(1, "../img/location_1_start.jpg")
+    showTextNode(1, "/hahaton/img/location_1_start.jpg")
 }
 
 function showTextNode(textNodeIndex, ImgUrl) {
