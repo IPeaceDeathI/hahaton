@@ -14,11 +14,11 @@ a {
 }
 
 a:visited {
-  color: white;
+  color: #dc143c;
 }
 
 body {
-  background-image: url('img/menu_theme.png');
+  background-image: url('/hahaton/img/menu_theme.png');
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -41,7 +41,7 @@ body {
   border-style: solid;
   text-align: center;
   padding: 10px;
-  color: white;
+  color: #dc143c;
   cursor: pointer;
 }
 
