@@ -2,9 +2,9 @@
     box-sizing: border-box;
 }
 
-body::after{
+body::after { /*подгрузка зображений*/
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:url("../img/gasoline.png") url("../img/location_1_chest.png") url("../img/location_1_closet.png") url("../img/location_1_door.png") url("../img/location_1_openedDoor.png") url("../img/location_1_start.png") url("../img/location_1_underBed.png") url("../img/location_2.png") url("../img/location_2_hallLeft.png") url("../img/location_3_hatch.png") url("../img/location_4_acum.png") url("../img/location_4_car.png") url("../img/location_4_noAcum.png") url("../img/location_5_acum.png") url("../img/location_6_prisoner.png") url("../img/location_7_car.png");   // подгрузка_изображений
+    content:url("/hahaton/img/gasoline.png") url("/hahaton/img/location_1_chest.png") url("/hahaton/img/location_1_closet.png") url("/hahaton/img/location_1_door.png") url("/hahaton/img/location_1_openedDoor.png") url("/hahaton/img/location_1_start.png") url("/hahaton/img/location_1_underBed.png") url("/hahaton/img/location_2.png") url("/hahaton/img/location_2_hallLeft.png") url("/hahaton/img/location_3_hatch.png") url("/hahaton/img/location_4_acum.png") url("/hahaton/img/location_4_car.png") url("/hahaton/img/location_4_noAcum.png") url("/hahaton/img/location_5_acum.png") url("/hahaton/img/location_6_prisoner.png") url("/hahaton/img/location_7_car.png");
 }
 
 body {
@@ -30,7 +30,6 @@ body {
     max-height: 30vh;
     width: 100vw;
     max-width: 100%;
-    /*background-color: white;*/
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px 2px;
