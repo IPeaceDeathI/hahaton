@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url("../img/gasoline.png") url("../img/location_1_chest.png") url("../img/location_1_closet.png") url("../img/location_1_door.png") url("../img/location_1_openedDoor.png") url("../img/location_1_start.png") url("../img/location_1_underBed.png") url("../img/location_2.png") url("../img/location_2_hallLeft.png") url("../img/location_3_hatch.png") url("../img/location_4_acum.png") url("../img/location_4_car.png") url("../img/location_4_noAcum.png") url("../img/location_5_acum.png") url("../img/location_6_prisoner.png") url("../img/location_7_car.png");   // подгрузка_изображений
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -10,17 +15,15 @@ body {
     align-items: flex-end;
     width: 100vw;
     height: 100vh;
-    /*background-color: #333;*/
     background-size: cover;
     filter: brightness(100%);
 }
-
-/*body:after{ content:''; background:rgba(255,255,255,.5); ... }*/
 
 #text {
     font-size: 22px;
     max-height: 20vh;
     color: white;
+    /*opacity: 0.7;*/
 }
 
 .container {
@@ -43,8 +46,7 @@ body {
 }
 
 .option {
-    /*background-color: #5c0d09;*/
-    /*border: 3px solid #420a07;*/
+    /*opacity: 0.7;*/
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
