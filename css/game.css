@@ -11,7 +11,7 @@
 
 body::after { /*подгрузка зображений*/
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:url("/hahaton/img/gasoline.png") url("/hahaton/img/location_1_chest.png") url("/hahaton/img/location_1_closet.png") url("/hahaton/img/location_1_door.png") url("/hahaton/img/location_1_openedDoor.png") url("/hahaton/img/location_1_start.png") url("/hahaton/img/location_1_underBed.png") url("/hahaton/img/location_2.png") url("/hahaton/img/location_2_hallLeft.png") url("/hahaton/img/location_3_hatch.png") url("/hahaton/img/location_4_acum.png") url("/hahaton/img/location_4_car.png") url("/hahaton/img/location_4_noAcum.png") url("/hahaton/img/location_5_acum.png") url("/hahaton/img/location_6_prisoner.png") url("/hahaton/img/location_7_car.png");
+    content: url("/hahaton/img/ladder_death.jpg") url("/hahaton/img/hatch_death.jpg") url("/hahaton/img/bed_death.jpg") url("/hahaton/img/basement_death.jpg") url("/hahaton/img/gasoline.png") url("/hahaton/img/location_1_chest.png") url("/hahaton/img/location_1_closet.png") url("/hahaton/img/location_1_door.png") url("/hahaton/img/location_1_openedDoor.png") url("/hahaton/img/location_1_start.png") url("/hahaton/img/location_1_underBed.png") url("/hahaton/img/location_2.png") url("/hahaton/img/location_2_hallLeft.png") url("/hahaton/img/location_3_hatch.png") url("/hahaton/img/location_4_acum.png") url("/hahaton/img/location_4_car.png") url("/hahaton/img/location_4_noAcum.png") url("/hahaton/img/location_5_acum.png") url("/hahaton/img/location_6_prisoner.png") url("/hahaton/img/location_7_car.png");
 }
 
 body {
