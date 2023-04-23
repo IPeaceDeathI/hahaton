@@ -6,7 +6,7 @@ let state = {}
 
 function startGame() {
     state = {}
-    showTextNode(1, "/hahaton/img/location_1_start.png")
+    showTextNode(1, "/hahaton/img/location_1_start.png", "music/main_theme.mp3")
 }
 
 function showTextNode(textNodeIndex, ImgUrl, MusicUrl="") {
@@ -48,6 +48,9 @@ function selectOption(option) {
     }
     if (nextTextNodeId === 100) {
         window.location.href="end.html";
+    }
+    if (nextTextNodeId === 50) {
+        window.location.href="lock_game.html";
     }
     state = Object.assign(state, option.setState)
     showTextNode(nextTextNodeId, nextImgUrl, nextMusicUrl)
@@ -480,7 +483,7 @@ const textNodes = [
             {
                 text: 'Подобрать пароль',
                 nextImg: "/hahaton/img/location_3_hatch.png",
-                nextText: 28
+                nextText: 50
             }
         ]
     },
