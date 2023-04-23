@@ -83,7 +83,7 @@ const textNodes = [
             },
             {
                 text: 'Спрятаться под кроватью',
-                nextImg: "img/location_1_underBed.png",
+                nextImg: "img/bed_death.jpg",
                 nextMusic: "music/dead_theme.mp3",
                 nextText: 5
             }
@@ -102,7 +102,7 @@ const textNodes = [
             },
             {
                 text: 'Ничего не делать',
-                nextImg: "img/location_4_car.png",
+                nextImg: "img/basement_death.jpg",
                 nextMusic: "music/dead_theme.mp3",
                 nextText: 6
             }
@@ -124,7 +124,7 @@ const textNodes = [
             },
             {
                 text: 'Спрятаться под кроватью',
-                nextImg: "img/location_1_underBed.png",
+                nextImg: "img/bed_death.jpg",
                 nextMusic: "music/dead_theme.mp3",
                 nextText: 5
             }
@@ -416,7 +416,7 @@ const textNodes = [
             },
             {
                 text: 'Пойти вниз',
-                nextImg: "img/location_2.png",
+                nextImg: "img/ladder_death.jpg",
                 nextMusic: "music/dead_theme.mp3",
                 nextText: 23
             }
@@ -433,7 +433,7 @@ const textNodes = [
             },
             {
                 text: 'Пойти вниз',
-                nextImg: "img/location_2.png",
+                nextImg: "img/ladder_death.jpg",
                 nextMusic: "music/dead_theme.mp3",
                 nextText: 23
             }
@@ -465,7 +465,7 @@ const textNodes = [
         options: [
             {
                 text: 'Осмотреться вокруг',
-                nextImg: "img/location_3_hatch.png",
+                nextImg: "img/hatch_death.jpg",
                 nextMusic: "music/dead_theme.mp3",
                 nextText: 27
             },
