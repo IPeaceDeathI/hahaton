@@ -31,10 +31,8 @@ $(document).on("mousemove", function (e) {
                 $(".lock .ring").removeClass("shake-little");
                 if (!$(".lock .stage li.active").length) {
                     $(".lock > .fas").removeClass("fa-lock").addClass("fa-lock-open");
-                    export {};
 
-
-                    window.location.href="game.html";
+                    window.location.href="end.html";
                 }
             }, 3000);
             timerset = true;
