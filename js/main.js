@@ -6,7 +6,7 @@ let state = {}
 
 function startGame() {
     state = {}
-    showTextNode(1, "/hahaton/img/location_1_start.png", "music/main_theme.mp3")
+    showTextNode(1, "img/location_1_start.png", "music/main_theme.mp3")
 }
 
 function showTextNode(textNodeIndex, ImgUrl, MusicUrl="") {
@@ -68,22 +68,22 @@ const textNodes = [
             {
                 text: 'Остаться лежать на кровати',
                 // setState: { item: true },  //ЗДЕСЬ УСТАНАВЛИВАЕТСЯ СОСТОЯНИЕ НОВОЙ ПЕРЕМЕННОЙ, ОТВЕЧАЮЩЕЙ ЗА НАЛИЧИЕ КАКОГО-НИБУДЬ ПРЕДМЕТА
-                nextImg: "/hahaton/img/location_4_car.png",
+                nextImg: "img/location_4_car.png",
                 nextText: 2
             },
             {
                 text: 'Осмотреть тумбочку',
-                nextImg: "/hahaton/img/location_1_chest.png",
+                nextImg: "img/location_1_chest.png",
                 nextText: 3
             },
             {
                 text: 'Спрятаться в шкафу',
-                nextImg: "/hahaton/img/location_1_closet.png",
+                nextImg: "img/location_1_closet.png",
                 nextText: 4
             },
             {
                 text: 'Спрятаться под кроватью',
-                nextImg: "/hahaton/img/location_1_underBed.png",
+                nextImg: "img/location_1_underBed.png",
                 nextMusic: "music/dead_theme.mp3",
                 nextText: 5
             }
@@ -97,12 +97,12 @@ const textNodes = [
         options: [
             {
                 text: 'Попытаться выбраться',
-                nextImg: "/hahaton/img/location_6_prisoner.png",
+                nextImg: "img/location_6_prisoner.png",
                 nextText: 7
             },
             {
                 text: 'Ничего не делать',
-                nextImg: "/hahaton/img/location_4_car.png",
+                nextImg: "img/location_4_car.png",
                 nextMusic: "music/dead_theme.mp3",
                 nextText: 6
             }
@@ -114,17 +114,17 @@ const textNodes = [
         options: [
             {
                 text: 'Остаться лежать на кровати',
-                nextImg: "/hahaton/img/location_1_start.png",
+                nextImg: "img/location_1_start.png",
                 nextText: 2
             },
             {
                 text: 'Спрятаться в шкафу',
-                nextImg: "/hahaton/img/location_1_closet.png",
+                nextImg: "img/location_1_closet.png",
                 nextText: 4
             },
             {
                 text: 'Спрятаться под кроватью',
-                nextImg: "/hahaton/img/location_1_underBed.png",
+                nextImg: "img/location_1_underBed.png",
                 nextMusic: "music/dead_theme.mp3",
                 nextText: 5
             }
@@ -137,12 +137,12 @@ const textNodes = [
         options: [
             {
                 text: 'Выйти из шкафа и пойти к открытой двери',
-                nextImg: "/hahaton/img/location_1_openedDoor.png",
+                nextImg: "img/location_1_openedDoor.png",
                 nextText: 21
             },
             {
                 text: 'Остаться в шкафу',
-                nextImg: "/hahaton/img/location_1_closet.png",
+                nextImg: "img/location_1_closet.png",
                 nextText: 20
             }
         ]
@@ -158,7 +158,7 @@ const textNodes = [
             },
             {
                 text: 'Выбрать другой вариант',
-                nextImg: "/hahaton/img/location_1_start.png",
+                nextImg: "img/location_1_start.png",
                 nextMusic: "music/main_theme.mp3",
                 nextText: 1
             }
@@ -175,7 +175,7 @@ const textNodes = [
             },
             {
                 text: 'Выбрать другой вариант',
-                nextImg: "/hahaton/img/location_4_car.png",
+                nextImg: "img/location_4_car.png",
                 nextMusic: "music/main_theme.mp3",
                 nextText: 2
             }
@@ -188,12 +188,12 @@ const textNodes = [
         options: [
             {
                 text: 'Освободить заложника',
-                nextImg: "/hahaton/img/location_6_prisoner.png",
+                nextImg: "img/location_6_prisoner.png",
                 nextText: 8
             },
             {
                 text: 'Оставить заложника и осмотреть машину',
-                nextImg: "/hahaton/img/location_4_noAcum.png",
+                nextImg: "img/location_4_noAcum.png",
                 nextText: 9
             },
         ]
@@ -209,7 +209,7 @@ const textNodes = [
             {
                 text: 'Осмотреть машину',
                 setState: { carKey: true },
-                nextImg: "/hahaton/img/location_4_noAcum.png",
+                nextImg: "img/location_4_noAcum.png",
                 nextText: 9
             }
         ]
@@ -220,7 +220,7 @@ const textNodes = [
         options: [
             {
                 text: 'Осмотреться вокруг',
-                nextImg: "/hahaton/img/location_4_car.png",
+                nextImg: "img/location_4_car.png",
                 nextText: 10
             }
         ]
@@ -232,25 +232,25 @@ const textNodes = [
             {
                 text: 'Подойти к шкафу',
                 requiredState: (currentState) => !currentState.acum,
-                nextImg: "/hahaton/img/location_5_acum.png",
+                nextImg: "img/location_5_acum.png",
                 nextText: 11
             },
             {
                 text: 'Подойти к столу',
                 requiredState: (currentState) => !currentState.gas,
-                nextImg: "/hahaton/img/gasoline.png",
+                nextImg: "img/gasoline.png",
                 nextText: 12
             },
             {
                 text: 'Искать ключ',
                 requiredState: (currentState) => currentState.gas && currentState.acum && !currentState.carKey,
-                nextImg: "/hahaton/img/location_4_car.png",
+                nextImg: "img/location_4_car.png",
                 nextText: 16
             },
             {
                 text: 'Подойти к капоту машины.',
                 requiredState: (currentState) => currentState.gas && currentState.acum && currentState.carKey,
-                nextImg: "/hahaton/img/location_4_noAcum.png",
+                nextImg: "img/location_4_noAcum.png",
                 nextText: 13
             }
         ]
@@ -262,7 +262,7 @@ const textNodes = [
             {
                 text: 'Забрать его',
                 setState: { acum: true },
-                nextImg: "/hahaton/img/location_4_noAcum.png",
+                nextImg: "img/location_4_noAcum.png",
                 nextText: 10
             }
         ]
@@ -274,7 +274,7 @@ const textNodes = [
             {
                 text: 'Забрать ее',
                 setState: { gas: true },
-                nextImg: "/hahaton/img/location_4_car.png",
+                nextImg: "img/location_4_car.png",
                 nextText: 10
             }
         ]
@@ -287,21 +287,21 @@ const textNodes = [
                 text: 'Вставить аккумулятор.',
                 requiredState: (currentState) => !currentState.acumInCar,
                 setState: { acumInCar: true },
-                nextImg: "/hahaton/img/location_4_acum.png",
+                nextImg: "img/location_4_acum.png",
                 nextText: 14
             },
             {
                 text: 'Залить бензин в бак.',
                 requiredState: (currentState) => !currentState.gasInCar,
                 setState: { gasInCar: true },
-                nextImg: "/hahaton/img/location_4_car.png",
+                nextImg: "img/location_4_car.png",
                 nextText: 14
             },
             {
                 text: 'Вставить ключ и завести машину.',
                 requiredState: (currentState) => !currentState.keyInCar && currentState.gasInCar && currentState.acumInCar,
                 setState: { keyInCar: true },
-                nextImg: "/hahaton/img/location_4_acum.png",
+                nextImg: "img/location_4_acum.png",
                 nextText: 15
             }
         ]
@@ -314,14 +314,14 @@ const textNodes = [
                 text: 'Вставить аккумулятор.',
                 requiredState: (currentState) => !currentState.acumInCar,
                 setState: { acumInCar: true },
-                nextImg: "/hahaton/img/location_4_acum.png",
+                nextImg: "img/location_4_acum.png",
                 nextText: 13
             },
             {
                 text: 'Залить бензин в бак.',
                 requiredState: (currentState) => !currentState.gasInCar,
                 setState: { gasInCar: true },
-                nextImg: "/hahaton/img/location_4_car.png",
+                nextImg: "img/location_4_car.png",
                 nextText: 13
             }
         ]
@@ -333,13 +333,13 @@ const textNodes = [
             {
                 text: 'Выбить дверь гаража',
                 requiredState: (currentState) => currentState.prisoner,
-                nextImg: "/hahaton/img/location_7_car.png",
+                nextImg: "img/location_7_car.png",
                 nextText: 17
             },
             {
                 text: 'Выбить дверь гаража',
                 requiredState: (currentState) => !currentState.prisoner,
-                nextImg: "/hahaton/img/location_7_car.png",
+                nextImg: "img/location_7_car.png",
                 nextText: 18
             }
         ]
@@ -351,7 +351,7 @@ const textNodes = [
             {
                 text: 'Пойти к машине',
                 setState: { carKey: true },
-                nextImg: "/hahaton/img/location_4_car.png",
+                nextImg: "img/location_4_car.png",
                 nextText: 19
             }
         ]
@@ -383,7 +383,7 @@ const textNodes = [
             {
                 text: 'Подойти к капоту машины.',
                 requiredState: (currentState) => currentState.gas && currentState.acum && currentState.carKey,
-                nextImg: "/hahaton/img/location_4_noAcum.png",
+                nextImg: "img/location_4_noAcum.png",
                 nextText: 13
             }
         ]
@@ -394,7 +394,7 @@ const textNodes = [
         options: [
             {
                 text: 'Выйти из шкафа и пойти к открытой двери',
-                nextImg: "/hahaton/img/location_1_openedDoor.png",
+                nextImg: "img/location_1_openedDoor.png",
                 nextText: 21
             }
         ]
@@ -406,17 +406,17 @@ const textNodes = [
         options: [
             {
                 text: 'Попробовать открыть левую дверь',
-                nextImg: "/hahaton/img/location_2_hallLeft.png",
+                nextImg: "img/location_2_hallLeft.png",
                 nextText: 24
             },
             {
                 text: 'Попробовать открыть правую дверь',
-                nextImg: "/hahaton/img/location_1_door.png",
+                nextImg: "img/location_1_door.png",
                 nextText: 22
             },
             {
                 text: 'Пойти вниз',
-                nextImg: "/hahaton/img/location_2.png",
+                nextImg: "img/location_2.png",
                 nextMusic: "music/dead_theme.mp3",
                 nextText: 23
             }
@@ -428,12 +428,12 @@ const textNodes = [
         options: [
             {
                 text: 'Попробовать открыть левую дверь',
-                nextImg: "/hahaton/img/location_2_hallLeft.png",
+                nextImg: "img/location_2_hallLeft.png",
                 nextText: 24
             },
             {
                 text: 'Пойти вниз',
-                nextImg: "/hahaton/img/location_2.png",
+                nextImg: "img/location_2.png",
                 nextMusic: "music/dead_theme.mp3",
                 nextText: 23
             }
@@ -452,7 +452,7 @@ const textNodes = [
             },
             {
                 text: 'Выбрать другой вариант',
-                nextImg: "/hahaton/img/location_1_openedDoor.png",
+                nextImg: "img/location_1_openedDoor.png",
                 nextMusic: "music/main_theme.mp3",
                 nextText: 21
             }
@@ -465,13 +465,13 @@ const textNodes = [
         options: [
             {
                 text: 'Осмотреться вокруг',
-                nextImg: "/hahaton/img/location_3_hatch.png",
+                nextImg: "img/location_3_hatch.png",
                 nextMusic: "music/dead_theme.mp3",
                 nextText: 27
             },
             {
                 text: 'Закрыть за собой дверь',
-                nextImg: "/hahaton/img/location_1_door.png",
+                nextImg: "img/location_1_door.png",
                 nextText: 26
             }
         ]
@@ -482,7 +482,7 @@ const textNodes = [
         options: [
             {
                 text: 'Подобрать пароль',
-                nextImg: "/hahaton/img/location_3_hatch.png",
+                nextImg: "img/location_3_hatch.png",
                 nextText: 50
             }
         ]
@@ -493,7 +493,7 @@ const textNodes = [
         options: [
             {
                 text: 'Осмотреться вокруг',
-                nextImg: "/hahaton/img/location_3_hatch.png",
+                nextImg: "img/location_3_hatch.png",
                 nextText: 25
             }
         ]
@@ -510,7 +510,7 @@ const textNodes = [
             },
             {
                 text: 'Выбрать другой вариант',
-                nextImg: "/hahaton/img/location_2_hallLeft.png",
+                nextImg: "img/location_2_hallLeft.png",
                 nextMusic: "music/main_theme.mp3",
                 nextText: 24
             }
