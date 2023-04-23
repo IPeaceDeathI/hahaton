@@ -1,2 +1,3 @@
 var audio = document.getElementById("myMusic3");
-audio.volume = 0.2;
+var volume = localStorage.getItem('volume')
+audio.volume = volume;
