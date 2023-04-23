@@ -1,5 +1,6 @@
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
+var music = document.getElementById('myMusic2')
 
 let state = {}
 
@@ -8,10 +9,14 @@ function startGame() {
     showTextNode(1, "/hahaton/img/location_1_start.png")
 }
 
-function showTextNode(textNodeIndex, ImgUrl) {
+function showTextNode(textNodeIndex, ImgUrl, MusicUrl="") {
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
     textElement.innerText = textNode.text
     document.body.style.backgroundImage = "url('" + ImgUrl + "')";
+    if(MusicUrl!==""){
+       music.removeAttribute('src');
+       music.setAttribute('src', MusicUrl);
+    }
     while (optionButtonsElement.firstChild) {
         optionButtonsElement.removeChild(optionButtonsElement.firstChild)
     }
@@ -34,6 +39,7 @@ function showOption(option) {
 function selectOption(option) {
     const nextTextNodeId = option.nextText
     const nextImgUrl = option.nextImg
+    const nextMusicUrl = option.nextMusic
     if (nextTextNodeId < 0) {
         return startGame()
     }
@@ -44,7 +50,7 @@ function selectOption(option) {
         window.location.href="end.html";
     }
     state = Object.assign(state, option.setState)
-    showTextNode(nextTextNodeId, nextImgUrl)
+    showTextNode(nextTextNodeId, nextImgUrl, nextMusicUrl)
 }
 
 const textNodes = [
@@ -75,6 +81,7 @@ const textNodes = [
             {
                 text: 'Спрятаться под кроватью',
                 nextImg: "/hahaton/img/location_1_underBed.png",
+                nextMusic: "music/dead_theme.mp3",
                 nextText: 5
             }
         ]
@@ -93,6 +100,7 @@ const textNodes = [
             {
                 text: 'Ничего не делать',
                 nextImg: "/hahaton/img/location_4_car.png",
+                nextMusic: "music/dead_theme.mp3",
                 nextText: 6
             }
         ]
@@ -114,6 +122,7 @@ const textNodes = [
             {
                 text: 'Спрятаться под кроватью',
                 nextImg: "/hahaton/img/location_1_underBed.png",
+                nextMusic: "music/dead_theme.mp3",
                 nextText: 5
             }
         ]
@@ -141,11 +150,13 @@ const textNodes = [
         options: [
             {
                 text: 'Начать с начала',
+                nextMusic: "music/main_theme.mp3",
                 nextText: -1
             },
             {
                 text: 'Выбрать другой вариант',
                 nextImg: "/hahaton/img/location_1_start.png",
+                nextMusic: "music/main_theme.mp3",
                 nextText: 1
             }
         ]
@@ -156,11 +167,13 @@ const textNodes = [
         options: [
             {
                 text: 'Начать с начала',
+                nextMusic: "music/main_theme.mp3",
                 nextText: -1
             },
             {
                 text: 'Выбрать другой вариант',
                 nextImg: "/hahaton/img/location_4_car.png",
+                nextMusic: "music/main_theme.mp3",
                 nextText: 2
             }
         ]
@@ -399,6 +412,7 @@ const textNodes = [
             {
                 text: 'Пойти вниз',
                 nextImg: "/hahaton/img/location_2.png",
+                nextMusic: "music/dead_theme.mp3",
                 nextText: 23
             }
         ]
@@ -415,6 +429,7 @@ const textNodes = [
             {
                 text: 'Пойти вниз',
                 nextImg: "/hahaton/img/location_2.png",
+                nextMusic: "music/dead_theme.mp3",
                 nextText: 23
             }
         ]
@@ -427,11 +442,13 @@ const textNodes = [
         options: [
             {
                 text: 'Начать с начала',
+                nextMusic: "music/main_theme.mp3",
                 nextText: -1
             },
             {
                 text: 'Выбрать другой вариант',
                 nextImg: "/hahaton/img/location_1_openedDoor.png",
+                nextMusic: "music/main_theme.mp3",
                 nextText: 21
             }
         ]
@@ -444,6 +461,7 @@ const textNodes = [
             {
                 text: 'Осмотреться вокруг',
                 nextImg: "/hahaton/img/location_3_hatch.png",
+                nextMusic: "music/dead_theme.mp3",
                 nextText: 27
             },
             {
@@ -482,11 +500,13 @@ const textNodes = [
         options: [
             {
                 text: 'Начать с начала',
+                nextMusic: "music/main_theme.mp3",
                 nextText: -1
             },
             {
                 text: 'Выбрать другой вариант',
                 nextImg: "/hahaton/img/location_2_hallLeft.png",
+                nextMusic: "music/main_theme.mp3",
                 nextText: 24
             }
         ]
