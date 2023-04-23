@@ -52,7 +52,7 @@ body {
   text-shadow: -1px 1px 5px black;
 }
 
-.button {
+.button, .setting {
   margin: 0 auto 20px;
   width: 100%;
   border-radius: 10px;
