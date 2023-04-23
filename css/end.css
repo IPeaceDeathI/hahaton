@@ -38,6 +38,13 @@ body {
     text-align: center;
     color: #dc143c;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover,
+.btn:focus {
+    box-shadow: 0 0 10px 2px;
+    transform: translateY(-0.25em);
 }
 
 a {

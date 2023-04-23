@@ -45,17 +45,22 @@ body {
 }
 
 .button {
-  box-shadow: 0 0 10px 2px;
   margin: 0 auto 20px;
   width: 100%;
   border-radius: 10px;
-  border-width: 2px;
-  border-color: #111;
+  border-width: 3px;
+  border-color: black;
   border-style: solid;
   text-align: center;
   padding: 10px;
   color: #dc143c;
   cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 0 10px 2px;
+  transform: translateY(-0.25em);
 }
 
 .game{

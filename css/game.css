@@ -53,6 +53,7 @@ body {
 
 .option {
     /*opacity: 0.7;*/
+    border-color: crimson;
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
@@ -64,6 +65,8 @@ button.option {
     background-color: transparent;
 }
 
-.option:hover {
-    border-color: black;
+.option:hover,
+.option:focus {
+    box-shadow: 0 0 10px 2px;
+    transform: translateY(-0.25em);
 }
