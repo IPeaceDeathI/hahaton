@@ -26,15 +26,15 @@ body {
     color: #dc143c;
 }
 
+#btn1 {
+    margin-top: 10%;
+}
+
 .btn {
     font-size: 50%;
     padding: 5px;
-    margin: 10px auto 10px;
+    margin: 0 auto 10px;
     width: 100%;
-    border-radius: 10px;
-    border-width: 2px;
-    border-color: #dc143c;
-    border-style: solid;
     text-align: center;
     color: #dc143c;
     cursor: pointer;
