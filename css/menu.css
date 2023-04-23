@@ -78,12 +78,15 @@ body {
   color: #dc143c;
   text-shadow: -1px 1px 5px black;
 }
+
 h1{
   text-align: center;
 }
+
 li{
   margin-bottom: 0.5em;
 }
+
 @media only screen and (max-width: 810px){
   .fot{
     margin-top: 80%;

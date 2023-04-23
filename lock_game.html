@@ -11,21 +11,21 @@
 
 </head>
 <body>
-<div class="lock">
-    <div class="instruction">Двигайте мышь вокруг замка, чтобы найти положение штифта, и удерживайте его в течение 3 секунд.</div>
-    <div class="lockpick">
-        <div class="fas fa-caret-right"></div>
-        <div class="fas fa-caret-left"></div>
+    <audio autoplay loop src="music/main_theme.mp3" id="myMusic2"></audio>
+    <div class="lock">
+        <div class="instruction">Двигайте мышь вокруг замка, чтобы найти положение штифта, и удерживайте его в течение 3 секунд.</div>
+        <div class="lockpick">
+            <div class="fas fa-caret-right"></div>
+            <div class="fas fa-caret-left"></div>
+        </div>
+        <div class="fas fa-lock fa-3x"></div>
+        <div class="ring shake-constant"></div>
+        <ul class="stage">
+            <li data-deg="25" class="active"></li>
+            <li data-deg="180"></li>
+            <li data-deg="0"></li>
+        </ul>
     </div>
-    <div class="fas fa-lock fa-3x"></div>
-    <div class="ring shake-constant"></div>
-    <ul class="stage">
-        <li data-deg="25" class="active"></li>
-        <li data-deg="180"></li>
-        <li data-deg="0"></li>
-    </ul>
-</div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="js/lock_game.js"></script>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="js/lock_game.js"></script>
 </body>
 </html>

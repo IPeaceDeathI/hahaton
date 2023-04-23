@@ -32,6 +32,7 @@ $(document).on("mousemove", function (e) {
                 if (!$(".lock .stage li.active").length) {
                     $(".lock > .fas").removeClass("fa-lock").addClass("fa-lock-open");
 
+                    window.location.href="end.html";
                 }
             }, 3000);
             timerset = true;
