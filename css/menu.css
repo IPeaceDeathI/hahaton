@@ -81,15 +81,5 @@ body {
     width: 70%;
     font-size: 20px;
   }
-}
 
-.authors{
-  color: #dc143c;
-  text-shadow: -1px 1px 5px black;
-}
-h1{
-  text-align: center;
-}
-li{
-  margin-bottom: 0.5em;
 }
