@@ -54,3 +54,20 @@ a {
 a:visited {
     color: white;
 }
+.escape{
+    background-image: url("H:/atom-projects/hahaton/img/bunker.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+p{
+  width: 80%;
+  color: white;
+  font-size: 18px;
+  font-family: "game_font", sans-serif;
+  text-shadow: -1px 1px 5px black;
+}
+@media only screen and (min-width: 810px){
+  .box-end{
+    margin-top: 4em;
+  }
+}
