@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "game_font";
+    font-weight: bold;
+    src: url("../fonts/game_font.otf") format("truetype");
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
+    font-family: "game_font", sans-serif;
 }
 
 body::after { /*подгрузка зображений*/
@@ -20,7 +27,7 @@ body {
 }
 
 #text {
-    font-size: 22px;
+    font-size: 23px;
     max-height: 20vh;
     color: white;
     /*opacity: 0.7;*/
@@ -28,7 +35,7 @@ body {
 
 .container {
     max-height: 30vh;
-    width: 100vw;
+    /*width: 100vw;*/
     max-width: 100%;
     padding: 10px;
     border-radius: 5px;
