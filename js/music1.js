@@ -1,5 +1,5 @@
 var audio = document.getElementById("myMusic1");
-
+audio.play()
 var storageVolume = localStorage.getItem('volume')
 if(storageVolume === null){
     localStorage.setItem('volume', 0.5)
