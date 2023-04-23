@@ -1,6 +1,9 @@
 body {
     background: #cc2e2e;
 }
+.instruction{
+  font-size: 28px;
+}
 .lock {
     position: absolute;
     top: 50%;
@@ -13,7 +16,7 @@ body {
     position: absolute;
     color: white;
     text-align: center;
-    top: -100px;
+    top: -180px;
     line-height: 1.5;
     font-family: "Roboto", sans-serif;
     width: 400px;
@@ -102,6 +105,17 @@ body {
     top: 3px;
     left: -8px;
 }
+@media only screen and (max-width: 800px){
+  .instruction{
+    font-size: 48px;
+    top: -280px;
+  }
+  .lock .instruction{
+    font-size: 48px;
+    visibility: hidden;
+  }
+}
+
 @keyframes shake-little {
     2% {
         transform: translate(1px, 1px) rotate(0.5deg);
