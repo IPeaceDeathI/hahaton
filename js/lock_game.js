@@ -31,8 +31,10 @@ $(document).on("mousemove", function (e) {
                 $(".lock .ring").removeClass("shake-little");
                 if (!$(".lock .stage li.active").length) {
                     $(".lock > .fas").removeClass("fa-lock").addClass("fa-lock-open");
-
-                    window.location.href="end.html";
+                    // console.log(localStorage.getItem("lock_game"))
+                    localStorage.setItem("lock_game", "1")
+                    // console.log(localStorage.getItem("lock_game"))
+                    window.location.href="game.html";
                 }
             }, 3000);
             timerset = true;

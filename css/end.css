@@ -18,6 +18,8 @@ body {
     height: 100vh;
     font-size: 500%;
     background-color: black;
+    background-image: url("/hahaton/img/escape.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }
